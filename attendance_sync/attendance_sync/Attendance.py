@@ -161,7 +161,8 @@ class Attendance:
 					employee_field_value=emp_no,
 					timestamp=formatted_timestamp,
 					employee_fieldname="name",
-					device_id=record["employeeNoString"],
+					#	device_id=record["employeeNoString"],
+					device_id=self.docname,
 				)
 		except Exception:
 			frappe.log_error(
